@@ -4,7 +4,7 @@
 class NotificationMailer < ApplicationMailer
   def announcement(email:, code:)
     @code = code
-    mail(to: email, subject: 'Announcement - Che/Marzejon Wedding Celebration') do |format|
+    mail(to: email, subject: 'Postponed Che/Marzejon Wedding') do |format|
       format.html
     end
   end
